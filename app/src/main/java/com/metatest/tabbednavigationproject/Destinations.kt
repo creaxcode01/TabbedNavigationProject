@@ -1,15 +1,32 @@
 package com.metatest.tabbednavigationproject
 
-import androidx.compose.ui.graphics.vector.ImageVector
 
-interface Destinations {
 
-    val route: String
+interface Destinations { // une classe peut hériter plusieurs fois d'une interface, mais qu'une seule fois d'une classe abstraite
+
+
+    val route: String  // dans l'interface, les éléments doivent être déclarer mais pas initialiser
     val icon: Int
     val titre: String
+
 }
 
-object Menu :Destinations {
+
+
+
+
+object Accueil0 :Destinations {
+
+    override val route = "Accueil"
+    override val icon = R.drawable.ic_home
+    override val titre = "Accueil"
+
+}
+
+
+
+
+object Menu0 :Destinations {
 
     override val route = "Menu"
     override val icon = R.drawable.ic_menu
@@ -19,16 +36,11 @@ object Menu :Destinations {
 
 }
 
-object Accueil :Destinations {
 
+object Emplacement0 :Destinations {
 
-
-}
-
-
-object Emplacement :Destinations {
-
-
-
+    override val route = "Emplacement"
+    override val icon = R.drawable.ic_location
+    override val titre = "Emplacement"
 
 }

@@ -37,7 +37,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.2.0'
+        kotlinCompilerExtensionVersion '1.5.31'
     }
     packagingOptions {
         resources {
@@ -47,6 +47,15 @@ android {
 }
 
 dependencies {
+
+
+
+
+
+     // ajout manuel
+     implementation "androidx.navigation:navigation-compose:2.5.3"
+
+    // fin de l'ajout manuel
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
